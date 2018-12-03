@@ -134,7 +134,7 @@
 			"Ask about your 'tax free savings account'."
 		);
 		ChatBot.addPattern(
-			"Add ([0-10000000000]+) to my income",
+			"Add ([0-9]+) to my income",
 			"response",
 			undefined,
 			function (matches) {
@@ -145,7 +145,7 @@
 			"Say 'Add [number] to my income' to change your income!"
 		);
 		ChatBot.addPattern(
-			"Add ([number]+) to my expenses",
+			"Add ([0-9]+) to my expenses",
 			"response",
 			undefined,
 			function (matches) {
@@ -156,7 +156,7 @@
 			"Say 'Add [number] to my expenses' to change your expenses!"
 		);
 		ChatBot.addPattern(
-			"Remove ([number]+) from my income",
+			"Remove ([0-9]+) from my income",
 			"response",
 			undefined,
 			function (matches) {
@@ -167,7 +167,7 @@
 			"Say 'Remove [number] from my income' to change your income!"
 		);
 		ChatBot.addPattern(
-			"Remove ([0-10000000000]+) from my expenses",
+			"Remove ([0-9]+) from my expenses",
 			"response",
 			undefined,
 			function (matches) {
